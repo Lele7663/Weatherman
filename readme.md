@@ -3,6 +3,7 @@
 
 A python script that uses the 'openweathermap' api.
 
+Discontinued because it would cost to expand :[
 
 ## Environment Variables
 
