@@ -70,7 +70,6 @@ def main():
             case 1:
                 print('You chose option 1. ^_____^')
                 visibility = jsonData['visibility']
-                #print(f'DEV SHIT: {visibility}')
                 if visibility < 10000:
                     print(f"Description: {jsonData['weather'][0]['description']}\nVisibility: {jsonData['visibility']}m")
                 elif visibility >= 10000:
@@ -88,8 +87,8 @@ def main():
                 sunriseTimestamp = int(jsonData["sys"]["sunrise"])
                 sunsetTimestamp = int(jsonData["sys"]["sunset"])
 
-                sunrise = datetime.fromtimestamp(sunriseTimestamp, datetime.timezone.utc) + datetime.timedelta(seconds=timeZoneInSec)
-                sunset = datetime.fromtimestamp(sunsetTimestamp, datetime.timezone.utc) + datetime.timedelta(seconds=timeZoneInSec)
+                sunrise = datetime.datetime.fromtimestamp(sunriseTimestamp, datetime.timezone.utc) + datetime.timedelta(seconds=timeZoneInSec)
+                sunset = datetime.datetime.fromtimestamp(sunsetTimestamp, datetime.timezone.utc) + datetime.timedelta(seconds=timeZoneInSec)
 
                 print('You chose option 5. ^_____^')
                 print(f'Sunrise: {sunrise.strftime("%H:%M:%S")}\nSunset: {sunset.strftime("%H:%M:%S")}')
