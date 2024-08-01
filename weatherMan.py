@@ -2,7 +2,6 @@ import json
 import os
 import requests
 import datetime
-from tkinter import *
 import dotenv
 
 dotenv.load_dotenv()
