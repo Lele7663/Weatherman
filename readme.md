@@ -18,7 +18,7 @@ First install python on the newest version
 Clone the project
 
 ```bash
-  git clone https://github.com/Lele7663/weatherman
+  git clone https://github.com/Lele7663/Weatherman.git
 ```
 
 Go to the project directory
